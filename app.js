@@ -655,16 +655,6 @@ function renderCards(filtered) {
         ${escapeHtml(record.title || "")}
       </h3>
 
-
-      ${
-        record.short_title
-          ? `<div class="short-title">
-               ${escapeHtml(record.short_title)}
-             </div>`
-          : ""
-      }
-
-
       ${
         record.organization
           ? `<div class="organization">
@@ -771,16 +761,6 @@ function openModal(id) {
       <h2 id="modalTitle">
         ${escapeHtml(record.title || "")}
       </h2>
-
-
-      ${
-        record.short_title
-          ? `<p class="short-title">
-               ${escapeHtml(record.short_title)}
-             </p>`
-          : ""
-      }
-
 
       <dl class="details-list">
 
