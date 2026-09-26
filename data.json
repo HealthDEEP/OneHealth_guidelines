@@ -20,12 +20,12 @@
     "type": "Guidelines",
     "year": 2024,
     "organization": "WHO",
-    "scope": "Global",
+    "scope": "One Health tools",
     "countries": "Global",
     "topics": ["One Health", "Guidelines"],
     "url": "https://www.who.int/publications/i/item/9789290211426",
     "source": "WHO",
-    "notes": ""
+    "notes": "The primary objectives of this guidance document are: (1) To offer structured and quick guidance on the most commonly-used OH operational tools and to facilitate easy understanding of What, Why, When, Where, Who, How to use them, and key outputs they can deliver ; (2) To support users to judiciously select the appropriate tool(s) depending on the country context, needs, and priorities and optimize their usage by providing easy to understand key gist of these tools. (3) Provide web-links to access each of these tools for detailed information."
   },
   {
     "id": "gui_002",
@@ -34,12 +34,12 @@
     "type": "Guidelines",
     "year": 2025,
     "organization": "WOAH",
-    "scope": "Global",
+    "scope": "Decision making",
     "countries": "Global",
     "topics": ["Guidelines", "Wildlife", "Surveillance"],
     "url": "https://www.woah.org/en/document/general-guidelines-surveillance-diseases-pathogens-toxic-agents-free-ranging-wildlife/",
     "source": "WOAH_IUCN",
-    "notes": ""
+    "notes": "The guidelines provides a framework to support informed decision-making in the face of uncertainty and complexity, presenting approaches to enable users to select pragmatic and relevant risk reduction / intervention strategies according to identified risk, context and need. The guidance portion of this document is split into four main sections: (1) Engagement with stakeholders and system mapping; (2) Risk analysis; (3) Monitoring and evaluation; (4) Tools and guidance."
   },
   {
     "id": "gui_003",
@@ -48,12 +48,12 @@
     "type": "Guidelines",
     "year": 2019,
     "organization": "FAO",
-    "scope": "Global",
+    "scope": "One Health tools",
     "countries": "Global",
     "topics": ["Guidelines", "Zoonoses", "Livestock", "Risk assessment", "AMR", "Food safety"],
     "url": "https://openknowledge.fao.org/items/870b5a92-2fc4-430e-87a9-f8086335acc6",
     "source": "FAO_WHO_OIE",
-    "notes": ""
+    "notes": "The TZG provides principles, best practices and options to assist countries in achieving sustainable and functional collaboration at the human-animal-environment interface. Examples and lessons learned from countries experiences are also included."
   },
   {
     "id": "gui_005",
@@ -62,12 +62,12 @@
     "type": "Manual",
     "year": 2012,
     "organization": "RAMSAR",
-    "scope": "Global",
+    "scope": "Disease management",
     "countries": "Global",
     "topics": ["Guidelines", "Zoonoses", "Wetland", "Wildlife", "Livestock", "Risk assessment"],
     "url": "https://www.ramsar.org/document/technical-report-7-ramsar-wetland-disease-manual",
     "source": "RAMSAR",
-    "notes": ""
+    "notes": "This technical report provides practical guidance on the assessment, monitoring and management of animal diseases in wetlands. Designed primarily for wetland managers and policy makers, the report highlights the importance of incorporating disease prevention and control into wetland management plans. It explains the main principles of disease management in wetlands, outlines practical approaches to risk assessment and response, and provides guidance on a range of animal diseases of concern in wetland ecosystems, particularly those with implications for biodiversity, livestock and human health."
   },
   {
     "id": "gui_006",
@@ -76,7 +76,7 @@
     "type": "Guidelines",
     "year": 2026,
     "organization": "WOAH",
-    "scope": "Global",
+    "scope": "Disease management",
     "countries": "Global",
     "topics": ["Guidelines", "Wildlife", "Outbreaks", "Investigation", "Reporting"],
     "url": "https://www.woah.org/en/document/guidelines-for-wildlife-disease-outbreak-investigation/",
@@ -90,11 +90,39 @@
     "type": "Manual",
     "year": 2010,
     "organization": "WOAH",
-    "scope": "Global",
+    "scope": "Disease management",
     "countries": "Global",
     "topics": ["Manual", "Wildlife", "Zoonoses", "Disease ecology", "Surveillance"],
     "url": "https://www.woah.org/en/document/a_training_manual_wildlife/",
     "source": "WOAH",
-    "notes": ""
+    "notes": "This training manual contains the core curriculum for the part of a workshop intended to inform and assist National Focal Points for Wildlife of the World Organisation for Animal Health (OIE) to gather and report information regarding the occurrence of wild animal pathogens and diseases in each of the OIE Members."
+  },
+  {
+    "id": "gui_008",
+    "title": "Guidelines for African swine fever (ASF) prevention and control in smallholder pig farming in Asia. Farm biosecurity, slaughtering and restocking",
+    "short_title": "FAO_ASF",
+    "type": "Guidelines",
+    "year": 2022,
+    "organization": "FAO",
+    "scope": "Disease management",
+    "countries": "Asia",
+    "topics": ["Guidelines", "African Swine Fever", "Outbreaks", "Biosecurity", "Restocking"],
+    "url": "https://openknowledge.fao.org/items/492eea79-e592-40df-9fdd-4d56658bc9af",
+    "source": "FAO_WorldBank",
+    "notes": "This Farm biosecurity, slaughtering and restocking] is the third of the series of the “Guidelines for African swine fever (ASF) prevention and control in smallholder pig farming in Asia” which guides biosecurity, slaughtering and restocking practice in smallholder pig farming system which are designed for use by national and/or central veterinary authorities, farmers and relevant stakeholders, especially focusing on Southeast Asian pig industry."
+  },
+  {
+    "id": "gui_009",
+    "title": "Guidelines for African Swine Fever prevention and control in facilities breeding endangered wild pig species for conservation",
+    "short_title": "",
+    "type": "Guidelines",
+    "year": null,
+    "organization": "IUCN",
+    "scope": "Wildlife management",
+    "countries": "Asia",
+    "topics": ["Guidelines", "African Swine Fever", "Outbreaks", "Prevention", "Wildlife farming"],
+    "url": "https://7e5d02d1-740c-4132-a8a5-3687af69cf43.filesusr.com/ugd/52f8ce_42b27c63aed44fd0b1931aaa48c9086f.pdf",
+    "source": "IUCN",
+    "notes": "The aim of the guidelines is to provide ex situ conservation institutions in Asia holding wild pigs, recommendations to improve their level of protection against potential introductions of ASF virus (ASFV) within their facilities. Several institutions already have protocols in place. The exchange of this information and any experience with the situation is beneficial for all. Hence, this document is a summary and collection of knowledge on ASF management being accumulated by several institutions and experts"
   }
 ]
