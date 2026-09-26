@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="One Health Guidelines and Operational Tools Database">
+
+  <title>One Health Guidelines Database</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+
+<body>
+
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+
+  <header class="site-header">
+
+    <div class="header-inner">
+
+      <div class="brand">
+
+        <div class="brand-mark">
+          OH
+        </div>
+
+        <div class="brand-text">
+          <div class="brand-title">
+            One Health Guidelines
+          </div>
+
+          <div class="brand-subtitle">
+            Guidelines, tools and operational frameworks
+          </div>
+        </div>
+
+      </div>
+
+      <div class="header-right">
+
+        <div class="database-status">
+          <span class="status-dot"></span>
+          <span id="databaseStatus">Loading database...</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================================================
+       HERO
+       ========================================================= -->
+
+  <section class="hero">
+
+    <div class="hero-inner">
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          ONE HEALTH RESOURCE DATABASE
+        </div>
+
+        <h1>
+          One Health Guidelines
+        </h1>
+
+        <p>
+          A searchable database of guidelines supporting One Health
+          implementation across sectors and geographic scales.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       STATISTICS
+       ========================================================= -->
+
+  <section class="stats-section">
+
+    <div class="container">
+
+      <div class="stats-grid">
+
+        <div class="stat-card">
+
+          <div class="stat-number" id="statTotal">
+            —
+          </div>
+
+          <div class="stat-label">
+            Resources
+          </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+          <div class="stat-number" id="statOrganizations">
+            —
+          </div>
+
+          <div class="stat-label">
+            Organizations
+          </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+          <div class="stat-number" id="statCountries">
+            —
+          </div>
+
+          <div class="stat-label">
+            Countries / Areas
+          </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+          <div class="stat-number" id="statTopics">
+            —
+          </div>
+
+          <div class="stat-label">
+            Topics
+          </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+          <div class="stat-number" id="statYears">
+            —
+          </div>
+
+          <div class="stat-label">
+            Publication period
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       MAIN
+       ========================================================= -->
+
+  <main class="container main-content">
+
+
+    <!-- =======================================================
+         SEARCH
+         ======================================================= -->
+
+    <section class="search-section">
+
+      <div class="search-box">
+
+        <span class="search-icon">
+          🔎
+        </span>
+
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Search title, organization, topic, country, year..."
+          autocomplete="off"
+        >
+
+        <button
+          id="clearSearch"
+          class="clear-search"
+          type="button"
+          aria-label="Clear search"
+        >
+          ×
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         FILTERS
+         ======================================================= -->
+
+    <section class="filters-section">
+
+      <div class="filters-header">
+
+        <h2>
+          Filter resources
+        </h2>
+
+        <button
+          id="resetFilters"
+          class="reset-button"
+          type="button"
+        >
+          Reset filters
+        </button>
+
+      </div>
+
+
+      <div class="filters-grid">
+
+
+        <!-- TYPE -->
+
+        <div class="filter-group">
+
+          <label for="typeFilter">
+            Type
+          </label>
+
+          <select id="typeFilter">
+
+            <option value="">
+              All types
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <!-- ORGANIZATION -->
+
+        <div class="filter-group">
+
+          <label for="organizationFilter">
+            Organization
+          </label>
+
+          <select id="organizationFilter">
+
+            <option value="">
+              All organizations
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <!-- COUNTRY -->
+
+        <div class="filter-group">
+
+          <label for="countryFilter">
+            Country / area
+          </label>
+
+          <select id="countryFilter">
+
+            <option value="">
+              All countries / areas
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <!-- TOPIC -->
+
+        <div class="filter-group">
+
+          <label for="topicFilter">
+            Topic
+          </label>
+
+          <select id="topicFilter">
+
+            <option value="">
+              All topics
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <!-- YEAR -->
+
+        <div class="filter-group">
+
+          <label for="yearFilter">
+            Year
+          </label>
+
+          <select id="yearFilter">
+
+            <option value="">
+              All years
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <!-- SORT -->
+
+        <div class="filter-group">
+
+          <label for="sortFilter">
+            Sort by
+          </label>
+
+          <select id="sortFilter">
+
+            <option value="year_desc">
+              Newest first
+            </option>
+
+            <option value="year_asc">
+              Oldest first
+            </option>
+
+            <option value="title_asc">
+              Title A–Z
+            </option>
+
+            <option value="organization_asc">
+              Organization A–Z
+            </option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         RESULTS HEADER
+         ======================================================= -->
+
+    <section class="results-header">
+
+      <div>
+
+        <h2>
+          Resources
+        </h2>
+
+        <div id="resultsCount" class="results-count">
+          Loading...
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         RESULTS
+         ======================================================= -->
+
+    <section
+      id="results"
+      class="results-grid"
+      aria-live="polite"
+    >
+    </section>
+
+
+    <!-- =======================================================
+         NO RESULTS
+         ======================================================= -->
+
+    <section
+      id="noResults"
+      class="no-results hidden"
+    >
+
+      <div class="no-results-icon">
+        🔎
+      </div>
+
+      <h3>
+        No resources found
+      </h3>
+
+      <p>
+        Try changing your search terms or resetting the filters.
+      </p>
+
+      <button
+        id="noResultsReset"
+        class="primary-button"
+        type="button"
+      >
+        Reset filters
+      </button>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- =========================================================
+       DETAIL MODAL
+       ========================================================= -->
+
+  <div
+    id="detailModal"
+    class="modal hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalTitle"
+  >
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+    <div class="modal-content">
+
+      <button
+        id="closeModal"
+        class="modal-close"
+        type="button"
+        aria-label="Close"
+      >
+        ×
+      </button>
+
+
+      <div id="modalBody">
+
+        <!-- JavaScript inserts content -->
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <div>
+
+        <strong>
+          One Health Guidelines Database
+        </strong>
+
+        <p>
+          A <a href="https://www.healthdeep.org/" target="_blank">HealthDEEP</a> resource
+        </p>
+
+      </div>
+
+
+      <div class="footer-meta">
+
+        <span>
+          Data maintained through JSON
+        </span>
+
+        <span>
+          •
+        </span>
+
+        <span id="footerYear">
+          2026
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================================================
+       JAVASCRIPT
+       ========================================================= -->
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
