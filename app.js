@@ -147,8 +147,7 @@ function initialise() {
   applyFilters();
 
   bindEvents();
-
-  detailFromHash();
+  
 }
 
 
@@ -723,7 +722,6 @@ function renderCards(filtered) {
 /* =========================================================
    MODAL
    ========================================================= */
-
 function openModal(id) {
 
   const record =
@@ -731,8 +729,8 @@ function openModal(id) {
       item => String(item.id) === String(id)
     );
 
-
   if (!record) {
+    console.error("Record not found:", id);
     return;
   }
 
@@ -770,7 +768,7 @@ function openModal(id) {
       </div>
 
 
-      <h2>
+      <h2 id="modalTitle">
         ${escapeHtml(record.title || "")}
       </h2>
 
@@ -949,22 +947,16 @@ function openModal(id) {
   `;
 
 
+  /*
+   * IMPORTANT:
+   * Remove "hidden" and add "open".
+   */
+
+  els.modal.classList.remove("hidden");
   els.modal.classList.add("open");
 
   document.body.classList.add("modal-open");
-
-
-  if (window.location.hash !== `#${record.id}`) {
-
-    history.replaceState(
-      null,
-      "",
-      `#${encodeURIComponent(record.id)}`
-    );
-
-  }
 }
-
 
 /* =========================================================
    CLOSE MODAL
@@ -977,22 +969,10 @@ function closeModal() {
   }
 
   els.modal.classList.remove("open");
+  els.modal.classList.add("hidden");
 
   document.body.classList.remove("modal-open");
-
-
-  if (window.location.hash) {
-
-    history.replaceState(
-      null,
-      "",
-      window.location.pathname +
-      window.location.search
-    );
-
-  }
 }
-
 
 /* =========================================================
    RESET FILTERS
@@ -1145,51 +1125,6 @@ function bindEvents() {
 
 }
 
-
-/* =========================================================
-   OPEN RECORD FROM URL HASH
-   ========================================================= */
-
-function detailFromHash() {
-
-  const hash =
-    window.location.hash.replace(
-      /^#/,
-      ""
-    );
-
-
-  if (!hash) {
-    return;
-  }
-
-
-  const id =
-    decodeURIComponent(hash);
-
-
-  const record =
-    records.find(
-      item => String(item.id) === String(id)
-    );
-
-
-  if (record) {
-
-    openModal(record.id);
-
-  }
-}
-
-
-/* =========================================================
-   HASH CHANGE
-   ========================================================= */
-
-window.addEventListener(
-  "hashchange",
-  detailFromHash
-);
 
 
 /* =========================================================
