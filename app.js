@@ -1,3 +1,4 @@
+```javascript
 /* =========================================================
    ONE HEALTH GUIDELINES DATABASE
    app.js
@@ -147,7 +148,7 @@ function initialise() {
   applyFilters();
 
   bindEvents();
-  
+
 }
 
 
@@ -353,18 +354,40 @@ function updateStats() {
   }
 
 
+  /* =======================================================
+     PUBLICATION PERIOD
+
+     This calculates the minimum and maximum year
+     from the complete loaded database.
+     ======================================================= */
+
   if (els.statYears) {
 
-    const years =
-      new Set(
-        records
-          .map(record => record.year)
-          .filter(Boolean)
+    const years = records
+      .map(record => Number(record.year))
+      .filter(
+        year =>
+          Number.isFinite(year) &&
+          year > 0
       );
 
-    els.statYears.textContent =
-      years.size;
+    if (years.length > 0) {
+
+      const minYear = Math.min(...years);
+      const maxYear = Math.max(...years);
+
+      els.statYears.textContent =
+        minYear === maxYear
+          ? String(minYear)
+          : `${minYear}–${maxYear}`;
+
+    } else {
+
+      els.statYears.textContent = "—";
+
+    }
   }
+
 }
 
 
@@ -655,6 +678,7 @@ function renderCards(filtered) {
         ${escapeHtml(record.title || "")}
       </h3>
 
+
       ${
         record.organization
           ? `<div class="organization">
@@ -712,6 +736,7 @@ function renderCards(filtered) {
 /* =========================================================
    MODAL
    ========================================================= */
+
 function openModal(id) {
 
   const record =
@@ -761,6 +786,7 @@ function openModal(id) {
       <h2 id="modalTitle">
         ${escapeHtml(record.title || "")}
       </h2>
+
 
       <dl class="details-list">
 
@@ -927,16 +953,16 @@ function openModal(id) {
   `;
 
 
-  /*
-   * IMPORTANT:
-   * Remove "hidden" and add "open".
-   */
+  /* =======================================================
+     OPEN MODAL
+     ======================================================= */
 
   els.modal.classList.remove("hidden");
   els.modal.classList.add("open");
 
   document.body.classList.add("modal-open");
 }
+
 
 /* =========================================================
    CLOSE MODAL
@@ -953,6 +979,7 @@ function closeModal() {
 
   document.body.classList.remove("modal-open");
 }
+
 
 /* =========================================================
    RESET FILTERS
@@ -1106,7 +1133,6 @@ function bindEvents() {
 }
 
 
-
 /* =========================================================
    START APPLICATION
    ========================================================= */
@@ -1115,3 +1141,4 @@ document.addEventListener(
   "DOMContentLoaded",
   loadData
 );
+
