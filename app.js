@@ -352,27 +352,18 @@ function updateStats() {
       topics.size;
   }
 
-if (els.statYears) {
 
-  const years =
-    records
-      .map(record => Number(record.year))
-      .filter(year => Number.isFinite(year) && year > 0);
+  if (els.statYears) {
 
-  if (years.length > 0) {
-
-    const minYear = Math.min(...years);
-    const maxYear = Math.max(...years);
+    const years =
+      new Set(
+        records
+          .map(record => record.year)
+          .filter(Boolean)
+      );
 
     els.statYears.textContent =
-      minYear === maxYear
-        ? String(minYear)
-        : `${minYear}–${maxYear}`;
-
-  } else {
-
-    els.statYears.textContent = "—";
-
+      years.size;
   }
 }
 
