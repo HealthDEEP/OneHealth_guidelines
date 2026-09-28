@@ -1,7 +1,7 @@
 [
   {
     "id": "gui_004",
-    "title": "Manual for reporting on 2025 zoonoses, zoonotic agents and on some other pathogenic microbiological agents under Directive 2003/99/EC",
+    "title": "Manual for reporting on 2025 zoonoses, zoonotic agents and on some other pathogenic microbiological agents",
     "short_title": "EFSA_reporting",
     "type": "Manual",
     "year": 2026,
@@ -124,5 +124,47 @@
     "url": "https://7e5d02d1-740c-4132-a8a5-3687af69cf43.filesusr.com/ugd/52f8ce_42b27c63aed44fd0b1931aaa48c9086f.pdf",
     "source": "IUCN",
     "notes": "The aim of the guidelines is to provide ex situ conservation institutions in Asia holding wild pigs, recommendations to improve their level of protection against potential introductions of ASF virus (ASFV) within their facilities. Several institutions already have protocols in place. The exchange of this information and any experience with the situation is beneficial for all. Hence, this document is a summary and collection of knowledge on ASF management being accumulated by several institutions and experts"
+  },
+  {
+    "id": "gui_010",
+    "title": "Managing Avian Flu: A science roadmap and action plan",
+    "short_title": "Canada_H5N1",
+    "type": "Action plan",
+    "year": 2025,
+    "organization": "Canada Government",
+    "scope": "Disease management",
+    "countries": "Canada",
+    "topics": ["Avian influenza", "Science", "Livestock", "Risk assessment", "Outbreaks"],
+    "url": "https://science.gc.ca/site/science/en/office-chief-science-advisor/emergency-preparedness/managing-avian-flu-science-roadmap-and-action-plan",
+    "source": "Canada",
+    "notes": "An integrated science roadmap and action plan (the Roadmap) is being proposed. Key principles underpin the Roadmap recommendations and deliverables. They include evidence informed decisions, open and secure science, equity and trust, harm reduction and respectful community engagement. Given the progression of H5N1 within and across species, it is suggested that priority efforts focus on advancing H5N1 fundamental knowledge, data and medical countermeasures. Similar approaches can be ultimately extended to other avian flu viruses, such as highly pathogenic H7."
+  },
+  {
+    "id": "gui_011",
+    "title": "Framework for early warning of animal health threats",
+    "short_title": "FAO_ewarning",
+    "type": "Guidelines",
+    "year": 2025,
+    "organization": "FAO",
+    "scope": "Disease management",
+    "countries": "Global",
+    "topics": ["Early warning systems", "Risk reduction", "Surveillance", "Legal frameworks"],
+    "url": "https://doi.org/10.4060/cd6477en",
+    "source": "FAO",
+    "notes": "Effective early warning systems (EWS) are a critical component of reducing risk. This framework lays out the technical objectives and the structural and institutional set-up for the operationalization and management of EWS against infectious animal diseases under a systems approach, which considers the overall strengthening of animal health surveillance systems and the capacity to implement risk-based strategies and respond to detected signals."
+  },
+  {
+    "id": "gui_012",
+    "title": "Evidence, policy, impact. WHO guide for evidence-informed decision-making",
+    "short_title": "WHO_policy",
+    "type": "Guidelines",
+    "year": 2022,
+    "organization": "WHO",
+    "scope": "Decision making",
+    "countries": "Global",
+    "topics": ["Policy", "Science", "Evidence"],
+    "url": "https://www.who.int/publications/i/item/9789240039872",
+    "source": "WHO",
+    "notes": "This guide and associated tool repository provide WHO staff, Member States and partner organizations with vetted methods and tools to better leverage diverse forms of evidence for more effective policy and practice in the clinical, public health and health system fields. Introducing a comprehensive, multidisciplinary framework to plan and implement evidence-to-policy processes, the guide also aims to foster better collaboration and create synergies among actors and workstreams of the evidence ecosystem."
   }
 ]
