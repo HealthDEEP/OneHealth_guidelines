@@ -166,5 +166,19 @@
     "url": "https://www.who.int/publications/i/item/9789240039872",
     "source": "WHO",
     "notes": "This guide and associated tool repository provide WHO staff, Member States and partner organizations with vetted methods and tools to better leverage diverse forms of evidence for more effective policy and practice in the clinical, public health and health system fields. Introducing a comprehensive, multidisciplinary framework to plan and implement evidence-to-policy processes, the guide also aims to foster better collaboration and create synergies among actors and workstreams of the evidence ecosystem."
+  },
+  {
+    "id": "gui_013",
+    "title": "HALI Wildlife Health Handbook",
+    "short_title": "HALI",
+    "type": "Handbook",
+    "year": 2011,
+    "organization": "University of California",
+    "scope": "Wildlife management",
+    "countries": "Africa",
+    "topics": ["Training", "Protected areas", "Wildlife", "Disease ecology"],
+    "url": "http://crsps.net/resource/hali-wildlife-health-handbook/",
+    "source": "University of California",
+    "notes": "The goal of this handbook is to enable protected area rangers, game scouts, and park staff to safely recognize, investigate, report, and respond to disease events that may impact the conservation of wildlife and threaten human health. The content in this handbook is adapted from a 2-day short course for park rangers and game scouts developed by the HALI Project and Ruaha National Park veterinarians and ecologists. Wherever possible we recommend this handbook be used in conjunction with a hands-on practical training course."
   }
 ]
